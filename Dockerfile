@@ -17,7 +17,7 @@
 FROM quay.io/suhailtechinfo/suhail-v2
 RUN git clone https://github.com/macksyn/Suhail-Md /root/macksyn
 RUN rm -rf /root/luv/.git
-WORKDIR /root/luv
+WORKDIR /root/macksyn
 RUN npm install || yarn install
 EXPOSE 8000
 CMD ["npm","start" ] 
