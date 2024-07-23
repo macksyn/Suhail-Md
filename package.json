@@ -5,15 +5,15 @@
    "main": "index.js",
    "type": "commonjs",  
    "scripts": {
-            "run": "pm2 start . --deep-monitoring --attach --name macksyn || node .",
-            "suhail": "pm2 start . --deep-monitoring --attach --name macksyn || node .",
-            "start": "pm2 start . --attach --name macksyn",
+            "run": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
+            "suhail": "pm2 start . --deep-monitoring --attach --name Suhail || node .",
+            "start": "pm2 start . --attach --name Suhail",
             "stop": "pm2 stop Suhail",
-            "old-heroku-postbuild": "git clone https://github.com/macksyn/Suhail-Md.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
-            "fis-heroku-postbuild": "git clone https://github.com/macksyn/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
+            "old-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
+            "fis-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
             "dbs--postinstall": "npx puppeteer@latest install --y"
    },
-   "author": "Alex macksyn",
+   "author": "SuhailTechInfo",
    "license" :"Apache-2.0",
    "dependencies": {
              "@adiwajshing/keyed-db": "^0.2.4",
@@ -74,8 +74,8 @@
    },
    "--repository": {
       "type": "git",
-      "url": "git+https://github.com/macksyn/Suhail-Md.git"
+      "url": "git+https://github.com/SuhailTechInfo/Suhail-Md.git"
    },
-   "--bugs": { "url": "https://github.com/macksyn/Suhail-Md/issues" },
-   "--homepage": "https://github.com/macksyn/Suhail-Md#readme"
+   "--bugs": { "url": "https://github.com/SuhailTechInfo/Suhail-Md/issues" },
+   "--homepage": "https://github.com/SuhailTechInfo/Suhail-Md#readme"
 }
