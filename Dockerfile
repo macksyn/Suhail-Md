@@ -14,7 +14,7 @@
 
  
 
-FROM quay.io/suhailtechinfo/suhail-v2
+FROM quay.io/sampandey001/secktor
 RUN git clone https://github.com/macksyn/Suhail-Md /root/luv
 RUN rm -rf /root/luv/.git
 WORKDIR /root/luv
