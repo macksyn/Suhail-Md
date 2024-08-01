@@ -15,7 +15,7 @@
  
 
 FROM quay.io/suhailtechinfo/suhail-v2
-RUN git clone https://github.com/SuhailTechInfo/Suhail-Md /root/luv
+RUN git clone https://github.com/macksyn/Suhail-Md /root/luv
 RUN rm -rf /root/luv/.git
 WORKDIR /root/luv
 RUN npm install || yarn install
